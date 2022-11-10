@@ -109,7 +109,7 @@ public class Question extends BaseTimeEntity {
 
     private void deleteQuestion(List<DeleteHistory> deleteHistoryList) {
         deleted = true;
-        deleteHistoryList.add(DeleteHistory.ofQuestion(id, writer));
+        deleteHistoryList.add(DeleteHistory.ofQuestion(this));
     }
 
     private void deleteAnswers(List<DeleteHistory> deleteHistoryList) {

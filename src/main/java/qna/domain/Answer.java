@@ -97,7 +97,7 @@ public class Answer extends BaseTimeEntity {
 
     public DeleteHistory deleteAnswer() {
         deleted = true;
-        return DeleteHistory.ofAnswer(id, writer);
+        return DeleteHistory.ofAnswer(this);
     }
 
     @Override

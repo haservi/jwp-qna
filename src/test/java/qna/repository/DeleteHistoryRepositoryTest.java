@@ -118,7 +118,6 @@ class DeleteHistoryRepositoryTest {
     private Answer save_answer_1(User user, Question question) {
         Answer A1 = new Answer(user, question, "content");
         return answerRepository.save(A1);
-
     }
 
 }
